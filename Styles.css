@@ -1,0 +1,186 @@
+
+body {
+    background: url('Image/作品集首頁.png') right bottom/70% no-repeat, linear-gradient(to top left, #43aeff, #e9f7ff);
+    /* background-color: #e4fff9; */
+    /* background: linear-gradient(to top left, #43aeff, #e9f7ff); */
+}
+
+.body-pages {
+    background: url('Image/作品集首頁-0.png') right bottom/50% no-repeat, linear-gradient(to top left, #76c3ff, #e9f7ff);
+}
+
+header {
+    background-color: #4f787a50;
+    position: relative;
+    height: 120px;
+    font: 1.2em "Microsoft JhengHei", sans-serif;
+}
+
+#img_LOGO {
+    background: url('Image/暫LOGO-01.png') center center/100% no-repeat;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+#img_LOGO:hover {
+    background: url('Image/暫LOGO.gif') center center/100% no-repeat;
+}
+
+#img_LOGO_2 {
+    background: url('Image/暫LOGO.png') center center/100% no-repeat;
+    float: left;
+    margin: 10px 0 0 10px;
+}
+
+#img_LOGO_2:hover {
+    background: url('Image/暫LOGO.gif') center center/100% no-repeat;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+ul {
+    display: flex;
+    float: left;
+    position: relative;
+    margin: 10px 0px;
+    padding-left: 1%;
+}
+
+ul li {
+    /* background-color: #ffffff; */
+    display: flex;
+    margin: 0 5%;
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(0px 6px 3px #0000006b);
+}
+
+ul li:active {
+    filter: drop-shadow(0px -1px 1px #0000009c);
+}
+
+ul li a {
+    background-color: #46eeb680;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+ul li a:hover {
+    background-color: #4b93ff50;
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    transition: all 0.5s ease;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 1%;
+    height: 420px;
+    font: 1.2em "Microsoft JhengHei", sans-serif;
+    overflow:scroll;
+    overflow-x:hidden;
+    &::-webkit-scrollbar {
+        width: 7px;
+    }
+    &::-webkit-scrollbar-button {
+        /* background: transparent; // 透明 */
+        background-color: #4b93ff60;
+        border-radius: 5px;
+    }
+    /* &::-webkit-scrollbar-track-piece { //滾動條的背景
+        background: transparent;
+    } */
+    &::-webkit-scrollbar-thumb {
+        border-radius: 5px;
+        background-color: #4b93ff60;
+        border: 1px solid #46eeb630;
+    }
+    /* &::-webkit-scrollbar-track { //可以調整滾動條軌道的樣式(如陰影)
+        box-shadow: transparent;
+    } */
+}
+
+#picture {
+    background-color: #4f787a50;
+    margin: 1%;
+    width: 380px;
+    height: 420px;
+    border-radius: 10px;
+}
+
+.gallery {
+    position: relative;
+    margin: 1.5% .5%;
+    border: 0.5px solid #e9f7ff;
+    width: 48%;
+    height: 0;
+    padding-bottom: 27%;
+    overflow:hidden;
+}
+
+.gallery:hover {
+    border: 1px solid #43aeff;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.desc {
+    position: absolute;
+    top: 7%;
+    left: -100%;
+    background-color: #ffffff90;
+    padding: 15px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.gallery:hover .desc {
+    left: 0px;
+    transition: all 0.5s ease;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 700px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 300px) {
+    ul {
+        flex-direction: column;
+    }
+    ul li {
+        margin: 0 80%;
+        width: 50px;
+        height: 50px;
+        flex-direction: column;
+    }
+}
+
+footer {
+    background-color: #4f787a50;
+    height: 30px;
+    text-align: center;
+    font: 1.2em "Microsoft JhengHei", sans-serif;
+}
