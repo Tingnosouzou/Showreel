@@ -17,24 +17,24 @@ header {
 }
 
 #img_LOGO {
-    background: url('Image/暫LOGO-01.png') center center/100% no-repeat;
+    background: url('Image/LOGO.png') center center/100% no-repeat;
     float: left;
     margin: 10px 0 0 10px;
 }
 
 #img_LOGO:hover {
-    background: url('Image/暫LOGO.gif') center center/100% no-repeat;
+    background: url('Image/LOGO.gif') center center/100% no-repeat;
 }
 
-#img_LOGO_2 {
-    background: url('Image/暫LOGO.png') center center/100% no-repeat;
+/* #img_LOGO_2 {
+    background: url('Image/暫LOGO-01.png') center center/100% no-repeat;
     float: left;
     margin: 10px 0 0 10px;
 }
 
 #img_LOGO_2:hover {
-    background: url('Image/暫LOGO.gif') center center/100% no-repeat;
-}
+    background: url('Image/LOGO.gif') center center/100% no-repeat;
+} */
 
 img {
     width: 100px;
