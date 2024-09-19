@@ -53,14 +53,14 @@ ul li {
     /* background-color: #ffffff; */
     display: flex;
     margin: 0 5%;
-    width: 100px;
+    width: 120px;
     height: 100px;
     justify-content: center;
     align-items: center;
     filter: drop-shadow(0px 6px 3px #0000006b);
 }
 
-ul li:active {
+ul li.list-1:active {
     filter: drop-shadow(0px -1px 1px #0000009c);
 }
 
@@ -84,7 +84,7 @@ ul li a:hover {
 ul ul {
     display: none;
     position: absolute;
-	left: 50px;
+	left: 80px;
 }
 
 ul ul li {
@@ -95,7 +95,16 @@ ul ul li {
 ul li:hover ul {
     display: block;
     display: flex;
-    transition: all 0.5s ease;
+    animation-name:oxxo;
+    animation-duration:0.5s;
+}
+@keyframes oxxo{
+    from{
+        left:50px;
+    }
+    to{
+        left:80px;
+    }
 }
 
 ul ul li:nth-child(odd) a {
@@ -114,6 +123,10 @@ ul ul li:nth-child(even) a {
     justify-content: center;
     align-items: baseline;
     cursor: pointer;
+}
+
+ul ul li.list-2:active {
+    filter: drop-shadow(0px -1px 1px #0000009c);
 }
 
 .content {
@@ -161,6 +174,28 @@ ul ul li:nth-child(even) a {
     /* margin: 10px 0 0 10px; */
 }
 
+.experience {
+    background: #fff;
+    position: relative;
+    margin: 1.5% .5%;
+    border: 0.5px solid #d3d3d3;
+    width: 30%;
+    height: 60%;
+    overflow:hidden;
+}
+
+.experience:hover {
+    border: 2px solid #43aeff;
+}
+
+.experience img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    z-index: 1;
+}
+
 .gallery {
     position: relative;
     margin: 1.5% .5%;
@@ -194,6 +229,12 @@ ul ul li:nth-child(even) a {
     padding: 15px;
     text-align: center;
     border-radius: 0 10px 10px 0;
+    z-index: 10;
+}
+
+.experience:hover .desc {
+    left: 0px;
+    transition: all 0.5s ease;
 }
 
 .gallery:hover .desc {
